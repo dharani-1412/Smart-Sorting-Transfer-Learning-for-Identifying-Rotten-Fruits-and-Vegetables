@@ -1,0 +1,270 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #fff;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Transparent Navbar */
+.navbar {
+  position: absolute;
+    background-color: #000 !important; /* force black */
+
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  position: relative;
+}
+
+.navbar nav a.active,
+.navbar nav a:hover {
+  border-bottom: 2px solid #ff3366;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Background Image with Blur */
+.background-blur {
+  position: absolute;
+  inset: 0;
+  background: url("/static/assets/herosection.png") center center/cover no-repeat;
+  filter: blur(6px) brightness(0.6);
+  z-index: 0;
+}
+
+/* Foreground content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  color: white;
+  padding: 20px;
+}
+
+/* Welcome Text */
+.welcome {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  padding: 8px 20px;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  width: auto;
+}
+
+/* Main Title */
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 10px 0;
+  
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  margin-bottom: 50px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  padding: 12px 28px;
+  font-size: 1rem;
+  border: 2px solid white;
+  border-radius: 999px;
+  color: white;
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* About Section */
+.about-section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.about-section h5 {
+  color: #ff3366;
+  font-weight: bold;
+}
+
+.about-section h2 span {
+  color: #ff3366;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.about-content div {
+  width: 45%;
+}
+
+/* Predict Section */
+.predict-section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.predict-section input {
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Result Section */
+.result-section {
+  padding: 2rem;
+  background: #f9f7f7;
+  text-align: center;
+}
+
+.result-box {
+  background: white;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Buttons */
+.btn {
+  background: transparent;
+  border: 2px solid white;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.btn-outline {
+  border: 2px solid #ff3366;
+  color: #ff3366;
+  padding: 10px 20px;
+  background: transparent;
+  text-decoration: none;
+}
+
+.btn-success {
+  background: #28a745;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Reuse existing navbar styles... */
+
+/* About Page Specific */
+.about-section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-header .badge {
+  background-color: #ffeaf1;
+  color: #ff3366;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 999px;
+  letter-spacing: 1px;
+}
+
+.about-header h2 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  
+}
+
+.about-header h2 span {
+  color: #ff3366;
+}
+
+.about-header .subheading {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  gap: 3rem;
+  text-align: left;
+}
+
+.about-content > div {
+  flex: 1;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.about-list li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: start;
+}
+
+.about-list .icon {
+  color: #ff3366;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+/* Reuse existing .btn-outline */
+

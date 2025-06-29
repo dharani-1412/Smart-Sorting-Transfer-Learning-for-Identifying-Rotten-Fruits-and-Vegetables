@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NutriGaze - Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <!-- Hero Section including transparent navbar -->
+  <section class="hero">
+    <div class="background-blur"></div>
+
+    <!-- Transparent Navbar -->
+    <header class="navbar transparent-navbar">
+      <div class="logo">NUTRIGAZE</div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/predict">Predict</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <p class="welcome">Welcome to <strong>NutriGaze</strong></p>
+      <h1 class="title">GREENGUARD INSIGHTS</h1>
+      <p class="subtitle">
+        We are a team of innovative scientists and technologists dedicated to ensuring your produce is always fresh and healthy.
+      </p>
+      <a href="/predict" class="cta-button">GET STARTED</a>
+    </div>
+  </section>
+</body> 
+</html>

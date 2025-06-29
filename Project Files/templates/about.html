@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - NutriGaze</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">NUTRIGAZE</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about" class="active">About</a>
+      <a href="/predict">Predict</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-header">
+      <span class="badge">ABOUT</span>
+      <h2>Learn More <span>About Us</span></h2>
+      <p class="subheading">
+        <strong>NutriGaze</strong> is a pioneering organization dedicated to enhancing the quality and<br>
+        safety of your fruits and vegetables.
+      </p>
+    </div>
+
+    <div class="about-content">
+      <div>
+        <p>
+          Our team comprises innovative scientists, technologists, and agricultural experts
+          committed to leveraging advanced detection technologies to ensure the produce you
+          consume is fresh, healthy, and nutritious.
+        </p>
+        <ul class="about-list">
+          <li><span class="icon">✔</span> Comprehensive analysis and grading of fruits and vegetables based on ripeness and nutritional content.</li>
+          <li><span class="icon">✔</span> Continuous monitoring of produce freshness from farm to table.</li>
+          <li><span class="icon">✔</span> Innovative solutions to minimize food waste by identifying and separating rotten produce early in the supply chain.</li>
+        </ul>
+      </div>
+      <div>
+        <p>
+          Our team is our greatest asset. We are a diverse group of experts in fields such as
+          agricultural science, data analytics, software engineering, and food technology.
+          Together, we bring a wealth of knowledge and experience to tackle the challenges of
+          food quality and safety.
+        </p>
+        <a href="#contact" class="btn-outline">Learn More</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
